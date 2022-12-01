@@ -1,3 +1,5 @@
+/* DISCLAIMER: INI BUKAN DATA ASLI, DATA INI HANYA DIBUAT SEBAGAI BAHAN UNTUK BELAJAR SQL */
+
 -- ini untuk mencari semua data
 SELECT * FROM albums;
 
