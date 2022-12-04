@@ -8,3 +8,6 @@
 4. Create databases and work with them.
 5. Apply the best SQL practices.
 6. Understand relational databases management systems.
+
+### SQL Mindmap
+![SQL Mindmap](https://user-images.githubusercontent.com/117008370/205488607-c8e92f00-9ddc-4924-8ab5-b34b2c9a168e.jpeg)
