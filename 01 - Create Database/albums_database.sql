@@ -1,19 +1,19 @@
 /* DISCLAIMER: INI BUKAN DATA ASLI, DATA INI HANYA DIBUAT SEBAGAI BAHAN UNTUK BELAJAR SQL */
 
--- ini untuk mencari semua data
+/* ini untuk mencari semua data */
 SELECT * FROM albums;
 
--- ini untuk menggunakan database
+/* ini untuk menggunakan database */
 USE albums;
 
--- ini untuk melihat tabel
+/* ini untuk melihat tabel */
 SHOW TABLES;
 
--- ini untuk melihat struktur tabel
+/* ini untuk melihat struktur tabel */
 DESCRIBE albums;
 SHOW CREATE TABLE albums;
 
--- ini untuk membuat tabel
+/* ini untuk membuat tabel */
 CREATE TABLE IF NOT EXISTS record_labels(
    record_label_id       INTEGER  NOT NULL PRIMARY KEY AUTO_INCREMENT
   ,record_label_name     VARCHAR(40) NOT NULL
@@ -48,7 +48,7 @@ CREATE TABLE IF NOT EXISTS albums(
   ,release_date    DATE  NOT NULL
 );
 
--- ini untuk memasukkan data ke tabel
+/* ini untuk memasukkan data ke tabel record_labels */
 INSERT INTO record_labels VALUES 
 (1,'Peninsula Entertainment Records','2000-01-16',24),
 (2,'Wild Record Label','1995-05-12',15),
@@ -66,7 +66,7 @@ INSERT INTO record_labels VALUES
 (14,'Young Artist Records','2016-06-30',20);
 
 
-
+/* ini untuk memasukkan data ke tabel artists */
 INSERT INTO artists VALUES 
 (1001,'Em','Spanò','1996-06-21',12,NULL,'independent artist',NULL,NULL,'2019-02-04'),
 (1002,'Delphia','Wardrobe','1999-06-17',5,5,'signed to a record label','2020-05-03','9999-12-31',NULL),
@@ -344,7 +344,7 @@ INSERT INTO artists VALUES
 (1274,'Joanie','Bristol','1980-03-25',10,14,'signed to a record label','2017-12-03','2020-10-14',NULL);
 
 
-
+/* ini untuk memasukkan data ke tabel genre */
 INSERT INTO genre VALUES
 ('g01','rock'),
 ('g02','progressive rock'),
@@ -372,6 +372,7 @@ INSERT INTO genre VALUES
 ('g24','gospel music');
 
 
+/* ini untuk memasukkan data ke tabel albums */
 INSERT INTO albums VALUES 
 (001,'Their Version of Me',1001,NULL,'g12','2020-05-05'),
 (002,'Happiness Amidst Problems',1001,NULL,'g12','2020-06-06'),
