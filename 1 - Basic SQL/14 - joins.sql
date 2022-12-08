@@ -17,7 +17,7 @@ FROM albums AS a
 LEFT JOIN `albums`.`artists` AS ar ON a.album_name = ar.artist_first_name
 ORDER BY a.album_name;
 
-/* ini menggunakan LEFT JOIN */
+/* ini menggunakan RIGHT JOIN */
 /* RIGHT JOIN itu mengambil data dari table kanan (table 2) dan mengambil data yang cocok (jika ada) dari table kiri (table 1) */
 SELECT 
     a.album_name,
